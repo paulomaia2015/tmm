@@ -11,9 +11,6 @@
 -- Before performing any data analysis, make sure to run the pipeline to materialize the sample datasets. The tables referenced in this notebook depend on that step.
 
 %python
-# Before performing any data analysis, make sure to run the pipeline to materialize the sample datasets. The tables referenced in this notebook depend on that step.
-
 tags = dbutils.notebook.entry_point.getDbutils().notebook().getContext().tags().get()
 print(tags)
 
-select * from demos.customers.sales_customer limit 10
