@@ -10,7 +10,4 @@
 
 -- Before performing any data analysis, make sure to run the pipeline to materialize the sample datasets. The tables referenced in this notebook depend on that step.
 
-USE CATALOG demo;
-USE SCHEMA YOUR_CATALOG;
-
-SELECT count(*) from historical_txs;
+select * from demos.customers.sales_customer limit 10
